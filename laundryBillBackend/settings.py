@@ -78,8 +78,13 @@ WSGI_APPLICATION = 'laundryBillBackend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'dejsfcfl37vnmo',
+            "USER": 'uwrtwewtxepkcs',
+            'PASSWORD': '<password>',
+            'HOST': 'ec2-52-22-135-159.compute-1.amazonaws.com',
+            'PORT': '5432'
     }
 }
 
