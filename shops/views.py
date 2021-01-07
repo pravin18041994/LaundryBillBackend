@@ -48,10 +48,8 @@ class UpdateShops(APIView):
             object.address = request.POST.get('address')
             object.owner_name = request.POST.get('owner_name')
             object.save()
-
         if serializer.is_valid():
             return Response(serializer.data, status=status.HTTP_204_NO_CONTENT)
-
         return Response(serializer.data, status=status.HTTP_204_NO_CONTENT)
 
 
